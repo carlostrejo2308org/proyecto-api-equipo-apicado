@@ -47,7 +47,7 @@ class testApi(unittest.TestCase):
 
         # Se lee el contenido de ambos archivos (el que crea la función antes llamada y el ya
         # escrito dentro de la carpeta "testJson")
-        with open("tests-apiListGames.json", 'r') as file:  
+        with open("ConsultaJson/tests-apiListGames.json", 'r') as file:  
             content1 = json.load(file)            
         
         with open("testJson/tests-apiListGames.json", 'r') as file:  
@@ -72,7 +72,7 @@ class testApi(unittest.TestCase):
         mock.call.write('\n')])
 
 
-        with open("tests-apiGame.json", 'r') as file:  
+        with open("ConsultaJson/tests-apiGame.json", 'r') as file:  
             content1 = json.load(file)            
         
         with open("testJson/tests-apiGame.json", 'r') as file:  
@@ -87,7 +87,7 @@ class testApi(unittest.TestCase):
         fake_stdout.assert_has_calls([mock.call.write('Archivo apiPlatforms.json actualizado'), 
         mock.call.write('\n')])
 
-        with open("tests-apiPlatforms.json", 'r') as file:  
+        with open("ConsultaJson/tests-apiPlatforms.json", 'r') as file:  
             content1 = json.load(file)            
         
         with open("testJson/tests-apiPlatforms.json", 'r') as file:  
@@ -102,7 +102,7 @@ class testApi(unittest.TestCase):
         fake_stdout.assert_has_calls([mock.call.write('Archivo apiGenres.json actualizado'), 
         mock.call.write('\n')])
 
-        with open("tests-apiGenres.json", 'r') as file:  
+        with open("ConsultaJson/tests-apiGenres.json", 'r') as file:  
             content1 = json.load(file)            
         
         with open("testJson/tests-apiGenres.json", 'r') as file:  
@@ -112,4 +112,4 @@ class testApi(unittest.TestCase):
 
 
 if __name__ == '__main__':    
-    unittest.main()
+    unittest.main()     #pragma: no cover

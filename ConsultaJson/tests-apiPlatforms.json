@@ -2,117 +2,117 @@
   {
     "id": 4,
     "name": "PC",
-    "games_count": 433582
+    "games_count": 441554
   },
   {
     "id": 187,
     "name": "PlayStation 5",
-    "games_count": 502
+    "games_count": 512
   },
   {
     "id": 1,
     "name": "Xbox One",
-    "games_count": 5208
+    "games_count": 5217
   },
   {
     "id": 18,
     "name": "PlayStation 4",
-    "games_count": 6282
+    "games_count": 6288
   },
   {
     "id": 186,
     "name": "Xbox Series S/X",
-    "games_count": 435
+    "games_count": 447
   },
   {
     "id": 7,
     "name": "Nintendo Switch",
-    "games_count": 4754
+    "games_count": 4773
   },
   {
     "id": 3,
     "name": "iOS",
-    "games_count": 74081
+    "games_count": 74133
   },
   {
     "id": 21,
     "name": "Android",
-    "games_count": 46789
+    "games_count": 47490
   },
   {
     "id": 8,
     "name": "Nintendo 3DS",
-    "games_count": 1746
+    "games_count": 1752
   },
   {
     "id": 9,
     "name": "Nintendo DS",
-    "games_count": 2404
+    "games_count": 2415
   },
   {
     "id": 13,
     "name": "Nintendo DSi",
-    "games_count": 31
+    "games_count": 37
   },
   {
     "id": 5,
     "name": "macOS",
-    "games_count": 90513
+    "games_count": 91804
   },
   {
     "id": 6,
     "name": "Linux",
-    "games_count": 65449
+    "games_count": 66467
   },
   {
     "id": 14,
     "name": "Xbox 360",
-    "games_count": 2763
+    "games_count": 2765
   },
   {
     "id": 80,
     "name": "Xbox",
-    "games_count": 707
+    "games_count": 708
   },
   {
     "id": 16,
     "name": "PlayStation 3",
-    "games_count": 3627
+    "games_count": 3626
   },
   {
     "id": 15,
     "name": "PlayStation 2",
-    "games_count": 1924
+    "games_count": 1921
   },
   {
     "id": 27,
     "name": "PlayStation",
-    "games_count": 1572
+    "games_count": 1573
   },
   {
     "id": 19,
     "name": "PS Vita",
-    "games_count": 1955
+    "games_count": 1958
   },
   {
     "id": 17,
     "name": "PSP",
-    "games_count": 1607
+    "games_count": 1612
   },
   {
     "id": 10,
     "name": "Wii U",
-    "games_count": 1271
+    "games_count": 1273
   },
   {
     "id": 11,
     "name": "Wii",
-    "games_count": 2370
+    "games_count": 2372
   },
   {
     "id": 105,
     "name": "GameCube",
-    "games_count": 641
+    "games_count": 640
   },
   {
     "id": 83,
@@ -122,17 +122,17 @@
   {
     "id": 24,
     "name": "Game Boy Advance",
-    "games_count": 948
+    "games_count": 955
   },
   {
     "id": 43,
     "name": "Game Boy Color",
-    "games_count": 406
+    "games_count": 407
   },
   {
     "id": 26,
     "name": "Game Boy",
-    "games_count": 596
+    "games_count": 600
   },
   {
     "id": 79,
@@ -142,7 +142,7 @@
   {
     "id": 49,
     "name": "NES",
-    "games_count": 941
+    "games_count": 943
   },
   {
     "id": 55,
@@ -152,47 +152,47 @@
   {
     "id": 41,
     "name": "Apple II",
-    "games_count": 417
+    "games_count": 420
   },
   {
     "id": 166,
     "name": "Commodore / Amiga",
-    "games_count": 2057
+    "games_count": 2059
   },
   {
     "id": 28,
     "name": "Atari 7800",
-    "games_count": 59
+    "games_count": 64
   },
   {
     "id": 31,
     "name": "Atari 5200",
-    "games_count": 61
+    "games_count": 63
   },
   {
     "id": 23,
     "name": "Atari 2600",
-    "games_count": 282
+    "games_count": 286
   },
   {
     "id": 22,
     "name": "Atari Flashback",
-    "games_count": 29
+    "games_count": 30
   },
   {
     "id": 25,
     "name": "Atari 8-bit",
-    "games_count": 304
+    "games_count": 306
   },
   {
     "id": 34,
     "name": "Atari ST",
-    "games_count": 835
+    "games_count": 836
   },
   {
     "id": 46,
     "name": "Atari Lynx",
-    "games_count": 55
+    "games_count": 56
   },
   {
     "id": 50,
@@ -207,7 +207,7 @@
   {
     "id": 107,
     "name": "SEGA Saturn",
-    "games_count": 315
+    "games_count": 317
   },
   {
     "id": 119,
@@ -222,12 +222,12 @@
   {
     "id": 74,
     "name": "SEGA Master System",
-    "games_count": 212
+    "games_count": 213
   },
   {
     "id": 106,
     "name": "Dreamcast",
-    "games_count": 347
+    "games_count": 346
   },
   {
     "id": 111,
@@ -242,7 +242,7 @@
   {
     "id": 77,
     "name": "Game Gear",
-    "games_count": 169
+    "games_count": 174
   },
   {
     "id": 12,

@@ -1,0 +1,3 @@
+rawg
+requests
+rawgpy
