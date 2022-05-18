@@ -1,78 +1,78 @@
 [
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  },
-  {
-    "name": "Card",
-    "games_count": 4288
-  }
+{
+  "name": "Action",
+  "games_count": 149658
+},
+{
+  "name": "Indie",
+  "games_count": 44488
+},
+{
+  "name": "Adventure",
+  "games_count": 113028
+},
+{
+  "name": "RPG",
+  "games_count": 45875
+},
+{
+  "name": "Strategy",
+  "games_count": 45668
+},
+{
+  "name": "Shooter",
+  "games_count": 51723
+},
+{
+  "name": "Casual",
+  "games_count": 38072
+},
+{
+  "name": "Simulation",
+  "games_count": 57213
+},
+{
+  "name": "Puzzle",
+  "games_count": 84387
+},
+{
+  "name": "Arcade",
+  "games_count": 22490
+},
+{
+  "name": "Platformer",
+  "games_count": 85779
+},
+{
+  "name": "Racing",
+  "games_count": 21698
+},
+{
+  "name": "Massively Multiplayer",
+  "games_count": 2862
+},
+{
+  "name": "Sports",
+  "games_count": 18905
+},
+{
+  "name": "Fighting",
+  "games_count": 9939
+},
+{
+  "name": "Family",
+  "games_count": 5357
+},
+{
+  "name": "Board Games",
+  "games_count": 8103
+},
+{
+  "name": "Educational",
+  "games_count": 12956
+},
+{
+  "name": "Card",
+  "games_count": 4288
+}
 ]
