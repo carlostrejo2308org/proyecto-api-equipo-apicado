@@ -30,8 +30,8 @@ class api:
         if self.checkStatusCode():
             r = json.loads(self.response.content)
             
-            self.appDB.setCollection('ListGames')   # Se setea el nombre de la coleeción
-            self.appDB.eliminar()       # Se eliminan los registros dentro de la colección
+            self.appDB.setCollection('ListGames')   # Se setea el nombre de la coleeción            
+            self.appDB.eliminar()   # Se eliminan los registros de la colección
             for element in r['results']:
                 content = {
                     'id' : element['id'],
