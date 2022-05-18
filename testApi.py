@@ -2,6 +2,7 @@ import unittest
 import json
 from api import api
 from unittest import mock
+from appDB import app
 
 class testApi(unittest.TestCase):
     def setUp(self):        
@@ -9,7 +10,9 @@ class testApi(unittest.TestCase):
         api_game = ('https://api.rawg.io/api/')    
         self.newApi = api(api_game, api_key)    # Crea objeto de tipo api
 
-    # Verifica atributos del objeto
+        self.appDB = app()      # Objeto de tipo app, que nos ayudará a conectarnos a la DB
+
+    # # Verifica atributos del objeto
     def testNewApi(self):
         api_key = '?key=9a1c16878d8c4ad39ce142b6fcff8340&1'
         api_game = ('https://api.rawg.io/api/')  
@@ -29,7 +32,7 @@ class testApi(unittest.TestCase):
 
         self.assertEqual(self.newApi.response.status_code,404, "Obtenido(%s) deberia ser %s" % (self.newApi.response.status_code,404))    
 
-    # Se comprueba la funcion listGames
+    #Se comprueba la funcion listGames
     def testListGames(self):
         param = 'gamess'      # Se le da un parametro incorrecto  
         
@@ -42,11 +45,15 @@ class testApi(unittest.TestCase):
         param = 'games'     # Se cambia por el parametro correcto
         with mock.patch('sys.stdout') as fake_stdout:
             self.newApi.listGames(param)
-        fake_stdout.assert_has_calls([mock.call.write('Archivo apiListGames.json actualizado'), 
+        fake_stdout.assert_has_calls([mock.call.write(f"Registros agregados a la colección : ListGames"), 
         mock.call.write('\n')])
 
-        # Se lee el contenido de ambos archivos (el que crea la función antes llamada y el ya
+        # Se lee el contenido de ambos archivos (el que crea la función readAndSave y el ya
         # escrito dentro de la carpeta "testJson")
+        
+        self.appDB.setCollection('ListGames')
+        self.appDB.readAndSave()
+
         with open("ConsultaJson/tests-apiListGames.json", 'r') as file:  
             content1 = json.load(file)            
         
@@ -56,7 +63,7 @@ class testApi(unittest.TestCase):
         # Verifica si el contenido de ambos archivos es identico
         self.assertEqual(content1,content2, "Obtenido(%s) deberia ser %s" % (content1,content2)) 
 
-    # Se comprueba la funcion idGamne
+    #Se comprueba la funcion idGamne
     def testIdGame(self):
         param = '11111111'        # Parametro incorrecto
         
@@ -68,12 +75,13 @@ class testApi(unittest.TestCase):
         param = '3498'      # Parametro correcto
         with mock.patch('sys.stdout') as fake_stdout:
             self.newApi.idGame(param)
-        fake_stdout.assert_has_calls([mock.call.write('Archivo apiGame.json actualizado'), 
+        fake_stdout.assert_has_calls([mock.call.write("Registro agregado a la colección : Game"), 
         mock.call.write('\n')])
 
-
+        self.appDB.setCollection('Game')
+        self.appDB.readAndSave()
         with open("ConsultaJson/tests-apiGame.json", 'r') as file:  
-            content1 = json.load(file)            
+            content1 = json.load(file)
         
         with open("testJson/tests-apiGame.json", 'r') as file:  
             content2 = json.load(file)
@@ -84,8 +92,11 @@ class testApi(unittest.TestCase):
     def testAvailablePlatforms(self):        
         with mock.patch('sys.stdout') as fake_stdout:
             self.newApi.availablePlatforms()
-        fake_stdout.assert_has_calls([mock.call.write('Archivo apiPlatforms.json actualizado'), 
+        fake_stdout.assert_has_calls([mock.call.write('Registros agregados a la colección : Platforms'), 
         mock.call.write('\n')])
+
+        self.appDB.setCollection('Platforms')
+        self.appDB.readAndSave()
 
         with open("ConsultaJson/tests-apiPlatforms.json", 'r') as file:  
             content1 = json.load(file)            
@@ -99,11 +110,14 @@ class testApi(unittest.TestCase):
     def testGenres(self):
         with mock.patch('sys.stdout') as fake_stdout:
             self.newApi.genres()
-        fake_stdout.assert_has_calls([mock.call.write('Archivo apiGenres.json actualizado'), 
+        fake_stdout.assert_has_calls([mock.call.write('Registros agregados a la colección : Genres'), 
         mock.call.write('\n')])
 
+        self.appDB.setCollection('Genres')
+        self.appDB.readAndSave()
+
         with open("ConsultaJson/tests-apiGenres.json", 'r') as file:  
-            content1 = json.load(file)            
+            content1 = json.load(file)                 
         
         with open("testJson/tests-apiGenres.json", 'r') as file:  
             content2 = json.load(file)
