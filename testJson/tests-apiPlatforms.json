@@ -10,14 +10,14 @@
     "games_count": 512
   },
   {
-    "id": 1,
-    "name": "Xbox One",
-    "games_count": 5217
-  },
-  {
     "id": 18,
     "name": "PlayStation 4",
-    "games_count": 6288
+    "games_count": 6287
+  },
+  {
+    "id": 1,
+    "name": "Xbox One",
+    "games_count": 5216
   },
   {
     "id": 186,
@@ -27,17 +27,17 @@
   {
     "id": 7,
     "name": "Nintendo Switch",
-    "games_count": 4773
+    "games_count": 4772
   },
   {
     "id": 3,
     "name": "iOS",
-    "games_count": 74133
+    "games_count": 74132
   },
   {
     "id": 21,
     "name": "Android",
-    "games_count": 47490
+    "games_count": 47491
   },
   {
     "id": 8,
@@ -57,7 +57,7 @@
   {
     "id": 5,
     "name": "macOS",
-    "games_count": 91804
+    "games_count": 91802
   },
   {
     "id": 6,

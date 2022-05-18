@@ -1,17 +1,12 @@
 import json
 import requests
-'''
-from textwrap import indent
-from unittest import result
-from urllib import request
-from venv import create
-'''
-
+from appDB import app
 class api:
     def __init__(self, url, key):
         self.url = url
         self.key = key
         self.response = None
+        self.appDB = app()      # Objeto de tipo app, que nos ayudará a conectarnos a la DB
         
     #verificar la respuesta http
     def checkStatusCode(self):
@@ -24,13 +19,6 @@ class api:
             return False
         return False            
 
-    #Creador de los json de las respuestas    
-    def createJson(content, name):
-        file = open(f"ConsultaJson/tests-api{name}.json", 'w')
-        file.write(content)
-        file.close()
-        print(f'Archivo api{name}.json actualizado')
-
     # Hace la petición
     def getResponse(self, url):
         self.response = requests.get(url)
@@ -41,18 +29,20 @@ class api:
         
         if self.checkStatusCode():
             r = json.loads(self.response.content)
-            arr = []
-
+            
+            self.appDB.setCollection('ListGames')   # Se setea el nombre de la coleeción
+            self.appDB.eliminar()       # Se eliminan los registros dentro de la colección
             for element in r['results']:
                 content = {
                     'id' : element['id'],
                     'name': element["name"],
                     'released' : element["released"]
                 }
-                arr.append(content)
                 #Resultados en consola
                 #print(content)
-            api.createJson(json.dumps(arr, indent = 2),'ListGames')
+            
+                self.appDB.insertar(content)    # Ahora se inserta el contenido de la consulta, dentro de la DB
+            print(f"Registros agregados a la colección : ListGames")
         else:
             print("ID incorrecto")
 
@@ -67,17 +57,19 @@ class api:
             #Guardamos el contenido de la petición en una variable, para pasarlo a un diccionario y obtener solo algunos datos del json.
             r = json.loads(self.response.content)
 
+            self.appDB.setCollection('Game')
+            self.appDB.eliminar()
+
             #Obtenemos los datos
             content = {
                 'id':r["id"],
                 'name':r["name"],
                 'released' : r["released"]
-            }
-            #Resultados en consola
-            # print(content)
+            }            
 
-            #Regresamos el diccionario a un string
-            api.createJson(json.dumps(content, indent = 2),'Game')
+            self.appDB.insertar(content)
+            
+            print(f"Registro agregado a la colección : Game")
         else:
             print("ID incorrecto")
     
@@ -87,32 +79,39 @@ class api:
 
         if self.checkStatusCode():
             r = json.loads(self.response.content)        
-            arr = []
+
+            self.appDB.setCollection('Platforms')
+            self.appDB.eliminar()
+            
             for element in r['results']:
                 content = {
                     'id' : element['id'],
                     'name': element["name"],
                     'games_count' : element["games_count"]
                 }
-                arr.append(content)
+
                 #Resultados en consola
-                #print(content)
-            api.createJson(json.dumps(arr, indent = 2),'Platforms')      
+                #print(content)            
+                self.appDB.insertar(content)
+            print(f"Registros agregados a la colección : Platforms")
+                
 
     def genres(self):        
         self.getResponse(self.url + 'genres' + self.key)
 
         if self.checkStatusCode():
             r = json.loads(self.response.content)
-            arr = []
+            self.appDB.setCollection('Genres')
+            self.appDB.eliminar()
             for element in r['results']:
                 content = {
                     'name': element["name"],
                     'games_count' : element["games_count"]
-                }
-                arr.append(content)     
-            #ver respuesta en json
-            api.createJson(json.dumps(arr, indent = 2),'Genres')  
+                }                
+                            
+                self.appDB.insertar(content)
+            print(f"Registros agregados a la colección : Genres")
+                
         
 #MAIN 
 if __name__ == '__main__':
@@ -122,15 +121,7 @@ if __name__ == '__main__':
     
     #objeto de la api
     newApi = api(api_game, api_key)
-     
-    #respuesta de la api    
-    if newApi.checkStatusCode():        
-        print("Respuesta satisfactoria, status " + str(newApi.response.status_code))
-    else:
-        print("Error del cliente, status " + str(newApi.response.status_code))
 
-
-    #lista de juegos, 100 respuestas aprox
     # newApi.listGames('games')
     # newApi.idGame('3498')
     # newApi.availablePlatforms()
