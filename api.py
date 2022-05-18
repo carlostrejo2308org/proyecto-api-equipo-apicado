@@ -26,7 +26,7 @@ class api:
 
     #Creador de los json de las respuestas    
     def createJson(content, name):
-        file = open(f"tests-api{name}.json", 'w')
+        file = open(f"ConsultaJson/tests-api{name}.json", 'w')
         file.write(content)
         file.close()
         print(f'Archivo api{name}.json actualizado')
