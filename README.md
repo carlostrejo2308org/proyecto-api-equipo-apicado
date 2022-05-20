@@ -1,5 +1,5 @@
 # Proyecto Final APICADO
-## Rodriguez Juan | Ferrer Francisco | Guerrero Lopez
+## Rodriguez Juan | Ferrer Francisco | Guerrero Cristian | Moncada Uriel
 
 
 ### Testeando appDB
