@@ -26,7 +26,7 @@ class testApi(unittest.TestCase):
         self.appDB.setCollection(name)
         self.assertEqual(self.appDB.collection.name,name, "Obtenido(%s) deberia ser %s" % (self.appDB.collection.name,name))   
 
-    #Se comprueba la funcion insertar
+    #Se comprueba la funcion eliminar
     def test_eliminar(self):
         self.appDB.setCollection('Game')                  
         self.appDB.eliminar()        
