@@ -1,7 +1,5 @@
 # Proyecto Final APICADO
-## Rodriguez Juan
-## Ferrer Francisco
-## Guerrero Lopez
+## Rodriguez Juan | Ferrer Francisco | Guerrero Lopez
 
 
 ### Testeando appDB
@@ -14,7 +12,6 @@ Tambien con algunas consultas.
 
 ### Testeando la api
 Con objeto tipo api
-
 Para consumir la api mostramos una lista de ciertos juegos y mostramos en json.
 
 # Conceptos:
