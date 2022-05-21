@@ -2,15 +2,12 @@ import unittest
 import json
 from api import api
 from unittest import mock
-from appDB import app
 
 class testApi(unittest.TestCase):
     def setUp(self):        
         api_key = '?key=9a1c16878d8c4ad39ce142b6fcff8340&1'
         api_game = ('https://api.rawg.io/api/')    
         self.newApi = api(api_game, api_key)    # Crea objeto de tipo api
-
-        self.appDB = app()      # Objeto de tipo app, que nos ayudará a conectarnos a la DB
 
     # # Verifica atributos del objeto
     def testNewApi(self):
@@ -46,13 +43,10 @@ class testApi(unittest.TestCase):
         with mock.patch('sys.stdout') as fake_stdout:
             self.newApi.listGames(param)
         fake_stdout.assert_has_calls([mock.call.write(f"Registros agregados a la colección : ListGames"), 
-        mock.call.write('\n')])
+        mock.call.write('\n')])        
 
-        # Se lee el contenido de ambos archivos (el que crea la función readAndSave y el ya
-        # escrito dentro de la carpeta "testJson")
-        
-        self.appDB.setCollection('ListGames')
-        self.appDB.readAndSave()
+        # Se lee el contenido de ambos archivos (el que crea la función readAndSave() del módulo appDB.py llamado
+        # dentro de la función listGames() y el ya escrito dentro de la carpeta "testJson")        
 
         with open("ConsultaJson/tests-apiListGames.json", 'r') as file:  
             content1 = json.load(file)            
@@ -77,9 +71,7 @@ class testApi(unittest.TestCase):
             self.newApi.idGame(param)
         fake_stdout.assert_has_calls([mock.call.write("Registro agregado a la colección : Game"), 
         mock.call.write('\n')])
-
-        self.appDB.setCollection('Game')
-        self.appDB.readAndSave()
+        
         with open("ConsultaJson/tests-apiGame.json", 'r') as file:  
             content1 = json.load(file)
         
@@ -93,10 +85,7 @@ class testApi(unittest.TestCase):
         with mock.patch('sys.stdout') as fake_stdout:
             self.newApi.availablePlatforms()
         fake_stdout.assert_has_calls([mock.call.write('Registros agregados a la colección : Platforms'), 
-        mock.call.write('\n')])
-
-        self.appDB.setCollection('Platforms')
-        self.appDB.readAndSave()
+        mock.call.write('\n')])        
 
         with open("ConsultaJson/tests-apiPlatforms.json", 'r') as file:  
             content1 = json.load(file)            
@@ -111,10 +100,7 @@ class testApi(unittest.TestCase):
         with mock.patch('sys.stdout') as fake_stdout:
             self.newApi.genres()
         fake_stdout.assert_has_calls([mock.call.write('Registros agregados a la colección : Genres'), 
-        mock.call.write('\n')])
-
-        self.appDB.setCollection('Genres')
-        self.appDB.readAndSave()
+        mock.call.write('\n')])        
 
         with open("ConsultaJson/tests-apiGenres.json", 'r') as file:  
             content1 = json.load(file)                 

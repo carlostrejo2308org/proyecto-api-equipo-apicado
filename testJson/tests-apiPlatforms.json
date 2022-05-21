@@ -2,7 +2,7 @@
   {
     "id": 4,
     "name": "PC",
-    "games_count": 441554
+    "games_count": 442863
   },
   {
     "id": 187,
@@ -10,14 +10,14 @@
     "games_count": 512
   },
   {
-    "id": 18,
-    "name": "PlayStation 4",
-    "games_count": 6287
-  },
-  {
     "id": 1,
     "name": "Xbox One",
     "games_count": 5216
+  },
+  {
+    "id": 18,
+    "name": "PlayStation 4",
+    "games_count": 6287
   },
   {
     "id": 186,
@@ -27,17 +27,17 @@
   {
     "id": 7,
     "name": "Nintendo Switch",
-    "games_count": 4772
+    "games_count": 4773
   },
   {
     "id": 3,
     "name": "iOS",
-    "games_count": 74132
+    "games_count": 74329
   },
   {
     "id": 21,
     "name": "Android",
-    "games_count": 47491
+    "games_count": 47614
   },
   {
     "id": 8,
@@ -47,7 +47,7 @@
   {
     "id": 9,
     "name": "Nintendo DS",
-    "games_count": 2415
+    "games_count": 2416
   },
   {
     "id": 13,
@@ -57,17 +57,17 @@
   {
     "id": 5,
     "name": "macOS",
-    "games_count": 91802
+    "games_count": 91988
   },
   {
     "id": 6,
     "name": "Linux",
-    "games_count": 66467
+    "games_count": 66600
   },
   {
     "id": 14,
     "name": "Xbox 360",
-    "games_count": 2765
+    "games_count": 2766
   },
   {
     "id": 80,
@@ -82,7 +82,7 @@
   {
     "id": 15,
     "name": "PlayStation 2",
-    "games_count": 1921
+    "games_count": 1923
   },
   {
     "id": 27,
@@ -92,12 +92,12 @@
   {
     "id": 19,
     "name": "PS Vita",
-    "games_count": 1958
+    "games_count": 1961
   },
   {
     "id": 17,
     "name": "PSP",
-    "games_count": 1612
+    "games_count": 1617
   },
   {
     "id": 10,
@@ -249,4 +249,4 @@
     "name": "Neo Geo",
     "games_count": 97
   }
-]
+  ]
