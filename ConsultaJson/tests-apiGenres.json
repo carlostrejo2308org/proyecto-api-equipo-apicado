@@ -1,63 +1,63 @@
 [
 {
   "name": "Action",
-  "games_count": 149658
+  "games_count": 150051
 },
 {
   "name": "Indie",
-  "games_count": 44488
+  "games_count": 44615
 },
 {
   "name": "Adventure",
-  "games_count": 113028
+  "games_count": 113389
 },
 {
   "name": "RPG",
-  "games_count": 45875
+  "games_count": 46018
 },
 {
   "name": "Strategy",
-  "games_count": 45668
+  "games_count": 45789
 },
 {
   "name": "Shooter",
-  "games_count": 51723
+  "games_count": 51860
 },
 {
   "name": "Casual",
-  "games_count": 38072
+  "games_count": 38239
 },
 {
   "name": "Simulation",
-  "games_count": 57213
+  "games_count": 57413
 },
 {
   "name": "Puzzle",
-  "games_count": 84387
+  "games_count": 84649
 },
 {
   "name": "Arcade",
-  "games_count": 22490
+  "games_count": 22498
 },
 {
   "name": "Platformer",
-  "games_count": 85779
+  "games_count": 86023
 },
 {
   "name": "Racing",
-  "games_count": 21698
+  "games_count": 21745
 },
 {
   "name": "Massively Multiplayer",
-  "games_count": 2862
+  "games_count": 2865
 },
 {
   "name": "Sports",
-  "games_count": 18905
+  "games_count": 18939
 },
 {
   "name": "Fighting",
-  "games_count": 9939
+  "games_count": 9976
 },
 {
   "name": "Family",
@@ -65,14 +65,14 @@
 },
 {
   "name": "Board Games",
-  "games_count": 8103
+  "games_count": 8118
 },
 {
   "name": "Educational",
-  "games_count": 12956
+  "games_count": 13032
 },
 {
   "name": "Card",
-  "games_count": 4288
+  "games_count": 4301
 }
 ]

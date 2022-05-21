@@ -42,6 +42,10 @@ class api:
                 #print(content)
             
                 self.appDB.insertar(content)    # Ahora se inserta el contenido de la consulta, dentro de la DB
+                
+            # Después de almacenar los registros, se consulta a la DB y crea un .json de dicha consulta
+            self.appDB.readAndSave()
+
             print(f"Registros agregados a la colección : ListGames")
         else:
             print("ID incorrecto")
@@ -69,6 +73,8 @@ class api:
 
             self.appDB.insertar(content)
             
+            self.appDB.readAndSave()
+            
             print(f"Registro agregado a la colección : Game")
         else:
             print("ID incorrecto")
@@ -93,6 +99,9 @@ class api:
                 #Resultados en consola
                 #print(content)            
                 self.appDB.insertar(content)
+
+            self.appDB.readAndSave()
+
             print(f"Registros agregados a la colección : Platforms")
                 
 
@@ -110,6 +119,8 @@ class api:
                 }                
                             
                 self.appDB.insertar(content)
+            self.appDB.readAndSave()
+
             print(f"Registros agregados a la colección : Genres")
                 
         
@@ -122,7 +133,7 @@ if __name__ == '__main__':
     #objeto de la api
     newApi = api(api_game, api_key)
 
-    # newApi.listGames('games')
-    # newApi.idGame('3498')
-    # newApi.availablePlatforms()
-    # newApi.genres()
+    newApi.listGames('games')
+    newApi.idGame('3498')
+    newApi.availablePlatforms()
+    newApi.genres()
