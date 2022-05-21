@@ -44,7 +44,7 @@ Pruebas unitarias para cada funcion.
 test_setCollection, test_eliminar, test_Insertar entre otras.
 Tambien con algunas consultas.
 
-# Integración : Testeando la api
+# Integración : Testeando la api 
 Ya que este modulo ([api.py](api.py)) dentro de la mayoría de sus funciones manda a llamar a algunas funciones del módulo [appDB.py](appDB.py), decidimos utilizar la métodología Bottom-Up, en la cual primero se deben de testear los modulos que no tienen dependencia/mandan a llamar a otros, así que primero testeamos appDB.py, como se menciono en
 la parte anterior a esta, una vez con eso se procede a testear api.py .
 
