@@ -1,0 +1,252 @@
+[
+  {
+    "id": 4,
+    "name": "PC",
+    "games_count": 432908
+  },
+  {
+    "id": 187,
+    "name": "PlayStation 5",
+    "games_count": 502
+  },
+  {
+    "id": 18,
+    "name": "PlayStation 4",
+    "games_count": 6282
+  },
+  {
+    "id": 1,
+    "name": "Xbox One",
+    "games_count": 5208
+  },
+  {
+    "id": 186,
+    "name": "Xbox Series S/X",
+    "games_count": 435
+  },
+  {
+    "id": 7,
+    "name": "Nintendo Switch",
+    "games_count": 4754
+  },
+  {
+    "id": 3,
+    "name": "iOS",
+    "games_count": 74081
+  },
+  {
+    "id": 21,
+    "name": "Android",
+    "games_count": 46729
+  },
+  {
+    "id": 8,
+    "name": "Nintendo 3DS",
+    "games_count": 1746
+  },
+  {
+    "id": 9,
+    "name": "Nintendo DS",
+    "games_count": 2404
+  },
+  {
+    "id": 13,
+    "name": "Nintendo DSi",
+    "games_count": 31
+  },
+  {
+    "id": 5,
+    "name": "macOS",
+    "games_count": 90401
+  },
+  {
+    "id": 6,
+    "name": "Linux",
+    "games_count": 65361
+  },
+  {
+    "id": 14,
+    "name": "Xbox 360",
+    "games_count": 2763
+  },
+  {
+    "id": 80,
+    "name": "Xbox",
+    "games_count": 707
+  },
+  {
+    "id": 16,
+    "name": "PlayStation 3",
+    "games_count": 3627
+  },
+  {
+    "id": 15,
+    "name": "PlayStation 2",
+    "games_count": 1924
+  },
+  {
+    "id": 27,
+    "name": "PlayStation",
+    "games_count": 1572
+  },
+  {
+    "id": 19,
+    "name": "PS Vita",
+    "games_count": 1955
+  },
+  {
+    "id": 17,
+    "name": "PSP",
+    "games_count": 1607
+  },
+  {
+    "id": 10,
+    "name": "Wii U",
+    "games_count": 1271
+  },
+  {
+    "id": 11,
+    "name": "Wii",
+    "games_count": 2370
+  },
+  {
+    "id": 105,
+    "name": "GameCube",
+    "games_count": 641
+  },
+  {
+    "id": 83,
+    "name": "Nintendo 64",
+    "games_count": 362
+  },
+  {
+    "id": 24,
+    "name": "Game Boy Advance",
+    "games_count": 948
+  },
+  {
+    "id": 43,
+    "name": "Game Boy Color",
+    "games_count": 406
+  },
+  {
+    "id": 26,
+    "name": "Game Boy",
+    "games_count": 596
+  },
+  {
+    "id": 79,
+    "name": "SNES",
+    "games_count": 910
+  },
+  {
+    "id": 49,
+    "name": "NES",
+    "games_count": 941
+  },
+  {
+    "id": 55,
+    "name": "Classic Macintosh",
+    "games_count": 669
+  },
+  {
+    "id": 41,
+    "name": "Apple II",
+    "games_count": 417
+  },
+  {
+    "id": 166,
+    "name": "Commodore / Amiga",
+    "games_count": 2057
+  },
+  {
+    "id": 28,
+    "name": "Atari 7800",
+    "games_count": 59
+  },
+  {
+    "id": 31,
+    "name": "Atari 5200",
+    "games_count": 61
+  },
+  {
+    "id": 23,
+    "name": "Atari 2600",
+    "games_count": 282
+  },
+  {
+    "id": 22,
+    "name": "Atari Flashback",
+    "games_count": 29
+  },
+  {
+    "id": 25,
+    "name": "Atari 8-bit",
+    "games_count": 304
+  },
+  {
+    "id": 34,
+    "name": "Atari ST",
+    "games_count": 835
+  },
+  {
+    "id": 46,
+    "name": "Atari Lynx",
+    "games_count": 55
+  },
+  {
+    "id": 50,
+    "name": "Atari XEGS",
+    "games_count": 22
+  },
+  {
+    "id": 167,
+    "name": "Genesis",
+    "games_count": 823
+  },
+  {
+    "id": 107,
+    "name": "SEGA Saturn",
+    "games_count": 315
+  },
+  {
+    "id": 119,
+    "name": "SEGA CD",
+    "games_count": 158
+  },
+  {
+    "id": 117,
+    "name": "SEGA 32X",
+    "games_count": 46
+  },
+  {
+    "id": 74,
+    "name": "SEGA Master System",
+    "games_count": 212
+  },
+  {
+    "id": 106,
+    "name": "Dreamcast",
+    "games_count": 347
+  },
+  {
+    "id": 111,
+    "name": "3DO",
+    "games_count": 92
+  },
+  {
+    "id": 112,
+    "name": "Jaguar",
+    "games_count": 31
+  },
+  {
+    "id": 77,
+    "name": "Game Gear",
+    "games_count": 169
+  },
+  {
+    "id": 12,
+    "name": "Neo Geo",
+    "games_count": 97
+  }
+]

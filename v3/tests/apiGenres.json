@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Action",
+    "games_count": 147215
+  },
+  {
+    "name": "Indie",
+    "games_count": 43960
+  },
+  {
+    "name": "Adventure",
+    "games_count": 110825
+  },
+  {
+    "name": "RPG",
+    "games_count": 45150
+  },
+  {
+    "name": "Strategy",
+    "games_count": 45052
+  },
+  {
+    "name": "Shooter",
+    "games_count": 50618
+  },
+  {
+    "name": "Casual",
+    "games_count": 37694
+  },
+  {
+    "name": "Simulation",
+    "games_count": 56413
+  },
+  {
+    "name": "Puzzle",
+    "games_count": 83111
+  },
+  {
+    "name": "Arcade",
+    "games_count": 22485
+  },
+  {
+    "name": "Platformer",
+    "games_count": 83950
+  },
+  {
+    "name": "Racing",
+    "games_count": 21436
+  },
+  {
+    "name": "Massively Multiplayer",
+    "games_count": 2842
+  },
+  {
+    "name": "Sports",
+    "games_count": 18745
+  },
+  {
+    "name": "Fighting",
+    "games_count": 9752
+  },
+  {
+    "name": "Family",
+    "games_count": 5356
+  },
+  {
+    "name": "Board Games",
+    "games_count": 8094
+  },
+  {
+    "name": "Educational",
+    "games_count": 12623
+  },
+  {
+    "name": "Card",
+    "games_count": 4285
+  }
+]

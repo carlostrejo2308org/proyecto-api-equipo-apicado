@@ -1,0 +1,5 @@
+rawg
+requests
+rawgpy
+json
+pymongo
